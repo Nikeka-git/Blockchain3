@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyToken dApp</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MyToken dApp</h1>
+
+    <button id="connectBtn">Connect Wallet</button>
+    <p id="account">Account: not connected</p>
+    <p id="balance">Your Balance: not loaded</p>
+
+    <div class="transfer-form">
+      <h2>Transfer Tokens</h2>
+      <input type="text" id="toAddress" placeholder="Recipient Address" />
+      <input type="number" id="amount" placeholder="Amount (MTK)" step="0.0001" />
+      <button id="transferBtn">Transfer</button>
+      <p id="status">Status: ready</p>
+    </div>
+
+    <div class="gas-estimator">
+      <h3>Gas Estimator (compare success vs fail)</h3>
+      <button id="estimateBtn">Estimate Gas</button>
+      <p id="gasSuccess">Success: —</p>
+      <p id="gasFail">Fail: —</p>
+    </div>
+  </div>
+
+  <script type="module" src="blockchain.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

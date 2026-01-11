@@ -1,0 +1,136 @@
+/* style.css - Modern dark theme for MyToken dApp */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(30, 30, 46, 0.88);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 35px;
+  color: #00d4ff;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+  letter-spacing: 1px;
+}
+
+h2, h3 {
+  color: #00ff9d;
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+}
+
+button {
+  background: linear-gradient(90deg, #00d4ff, #007bff, #00d4ff);
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  margin: 15px 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+button:hover {
+  background-position: right center;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.7);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(40, 40, 60, 0.6);
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+p {
+  margin: 18px 0;
+  font-size: 1.25rem;
+  color: #d0d0d0;
+}
+
+#account, #balance, #status {
+  font-weight: 600;
+  color: #00ff9d;
+  background: rgba(0, 255, 157, 0.08);
+  padding: 14px;
+  border-radius: 12px;
+  word-break: break-all;
+}
+
+#status {
+  color: #ffcc00;
+  font-style: italic;
+}
+
+.gas-estimator {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(20, 20, 40, 0.6);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 204, 0, 0.2);
+}
+
+.gas-estimator p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+  h1 { font-size: 2rem; }
+  button { padding: 12px 24px; font-size: 1rem; }
+}

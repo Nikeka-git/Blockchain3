@@ -1,0 +1,92 @@
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(30, 30, 46, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  margin: 12px 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #d0d0d0;
+}
+
+#account,
+#value {
+  font-weight: bold;
+  color: #00ff9d;
+  word-break: break-all;
+  background: rgba(0, 255, 157, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
